@@ -1,18 +1,23 @@
-<script setup></script>
+<script setup>
+import Navbar from "./components/Navbar.vue";
+import HeroSection from "./components/HeroSection.vue";
+import SectionAbout from "./components/SectionAbout.vue";
+import SectionServices from "./components/SectionServices.vue";
+import SectionTechnologies from "./components/SectionTechnologies.vue";
+import SectionHowTo from "./components/SectionHowTo.vue";
+
+import Footer from "./components/Footer.vue";
+</script>
 
 <template>
   <div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Vite!</h1>
-    <button class="btn btn-gradiente1 py-4 px-7">Primary button</button>
+    <Navbar />
+    <HeroSection />
+    <SectionAbout />
+    <SectionServices />
+    <SectionTechnologies />
+    <SectionHowTo />
+    <Footer />
   </div>
 </template>
-<style scoped>
-.btn-gradiente1 {
-  background: rgb(129, 118, 175);
-  background: linear-gradient(
-    90deg,
-    rgba(129, 118, 175, 1) 0%,
-    rgba(192, 183, 232, 1) 100%
-  );
-}
-</style>
+
